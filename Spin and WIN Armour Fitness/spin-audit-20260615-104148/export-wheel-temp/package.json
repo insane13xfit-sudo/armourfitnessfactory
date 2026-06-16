@@ -1,0 +1,11 @@
+{
+  "name": "export-wheel-temp",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "export": "node export.js"
+  },
+  "dependencies": {
+    "puppeteer": "^20.0.0"
+  }
+}

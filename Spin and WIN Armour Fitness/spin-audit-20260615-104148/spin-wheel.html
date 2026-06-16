@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armour Fitness Factory | Spin & Win</title>
+    <meta name="description" content="Spin & Win rewards at Armour Fitness Factory. One spin after registration, guaranteed reward, claim within 7 days.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="spin-wheel.css">
+</head>
+<body>
+    <div class="page-shell">
+        <main class="page-content">
+            <section class="hero-card">
+                <div class="hero-meta">
+                    <span>🎉 Spin & Win Rewards</span>
+                    <span>Every Spin Is A Win</span>
+                </div>
+                <h1>Rewards worth ₹25,000+</h1>
+                <div class="badge-row">
+                    <span class="badge">⭐ Guaranteed Reward</span>
+                    <span class="badge">⏰ Claim Within 7 Days</span>
+                    <span class="badge">🏋 Armour Fitness Factory</span>
+                </div>
+            </section>
+
+            <section class="wheel-card">
+                <div class="wheel-wrapper">
+                                <div class="wheel-frame">
+                                                <div id="wheel" class="wheel" role="img" aria-label="Spin the wheel">
+                                                        <div class="wheel-face">
+                                                                <div class="sectors" id="sectors"></div>
+                                                                <div class="rim"></div>
+                                                                <div class="led-ring" id="ledRing"></div>
+                                                                <div class="center-badge">
+                                                                        <svg viewBox="0 0 240 240" class="badge-svg" xmlns="http://www.w3.org/2000/svg">
+                                                                            <defs>
+                                                                                <radialGradient id="g1" cx="40%" cy="30%">
+                                                                                    <stop offset="0%" stop-color="#ff4b4b"/>
+                                                                                    <stop offset="100%" stop-color="#8b0000"/>
+                                                                                </radialGradient>
+                                                                            </defs>
+                                                                            <circle cx="120" cy="120" r="112" fill="url(#g1)" stroke="#111" stroke-width="6"/>
+                                                                            <g transform="translate(24,24) scale(0.7)">
+                                                                                <path d="M72 32 C90 10 140 10 158 32 C176 54 158 86 134 86 C110 86 92 64 72 32 Z" fill="#0b0b0b" opacity="0.95" />
+                                                                                <path d="M44 120 C64 96 92 88 122 88 C152 88 180 96 200 120 L180 156 C160 132 132 120 100 120 C68 120 40 132 20 156 Z" fill="#0b0b0b"/>
+                                                                            </g>
+                                                                        </svg>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="wheel-center">SPIN</div>
+                                        </div>
+                    <div class="wheel-glow"></div>
+                </div>
+                <button id="spinButton" class="btn btn-primary">SPIN</button>
+                <p class="wheel-note">Only one spin is allowed. You can play after successful registration.</p>
+            </section>
+        </main>
+    </div>
+
+    <div class="modal-backdrop" id="resultModal">
+        <div class="modal-window">
+            <button id="closeModal" class="modal-close" aria-label="Close">×</button>
+            <div class="modal-icon">🎉</div>
+            <h2>Congratulations!</h2>
+            <p class="modal-subtitle">🏆 You Won:</p>
+            <div class="modal-card">
+                <div class="modal-prize" id="prizeName">FREE YEARLY</div>
+                <div class="modal-code"><span>Redeemable Code:</span> <strong id="prizeCode">ARMOUR-XXXXXX</strong></div>
+            </div>
+            <p class="modal-copy">You’re one step closer to your fitness transformation at Armour Fitness Factory.</p>
+            <div class="modal-details">
+                <div><strong>⏰ Claim Before:</strong> <span id="expiryDate">7 DAYS FROM TODAY</span></div>
+                <div class="modal-contact">📍 Visit Armour Fitness Factory to redeem your reward.</div>
+                <div class="modal-contact">📞 9347009385 | 7396227023</div>
+                <div class="modal-alert">⚠️ Terms & Conditions Apply.</div>
+                <div class="modal-alert">🔥 Claim your prize before it expires.</div>
+            </div>
+            <div class="modal-actions">
+                <button id="claimButton" class="btn btn-primary">🎁 Claim My Prize</button>
+                <button id="whatsappButton" class="btn btn-secondary">💬 Send To WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="confettiRoot" aria-hidden="true"></div>
+    <script src="spin-wheel.js"></script>
+</body>
+</html>

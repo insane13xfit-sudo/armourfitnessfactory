@@ -1,0 +1,32 @@
+﻿Spin audit report - 20260615-104148
+
+File: ArmourFitnessFactory.html Size:54948 bytes
+
+Match in ArmourFitnessFactory.html (Line 1191): localStorage.setItem('armourSpinAccess', JSON.stringify(access));
+
+Match in ArmourFitnessFactory.html (Line 1193): localStorage.setItem('armourSpinCompleted', 'false');
+
+Match in ArmourFitnessFactory.html (Line 1211): window.location.href='spin-wheel.html';
+
+Match in ArmourFitnessFactory.html (Line 1226): const officialWhatsApp='919347009385';
+
+Match in ArmourFitnessFactory.html (Line 1227): const cooldownKey='armourSpinCooldown';
+
+File: spin-wheel.html Size:3548 bytes
+
+Match in spin-wheel.html (Line 11): <link rel="stylesheet" href="spin-wheel.css">
+
+Match in spin-wheel.html (Line 69): <script src="spin-wheel.js"></script>
+
+File: spin-wheel.css Size:6612 bytes
+
+No key matches found in spin-wheel.css
+
+File: spin-wheel.js Size:8160 bytes
+
+Match in spin-wheel.js (Line 23): whatsapp: '919347009385',
+
+Match in spin-wheel.js (Line 24): accessKey: 'armourSpinAccess',
+
+Match in spin-wheel.js (Line 25): completedKey: 'armourSpinCompleted'
+
